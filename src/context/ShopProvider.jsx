@@ -77,7 +77,8 @@ export default function ShopProvider(props) {
             fetchAllProducts:fetchAllProducts,
             fetchProductWithId:fetchProductWithId,
             addItemToCheckout:addItemToCheckout,
-            openCart:openCart
+            openCart:openCart,
+            closeCart:closeCart
             }}>
             {props.children} 
             {/* THIS LINE IS NECESSARY!  TO MAKE CONTEXT WORK*/}

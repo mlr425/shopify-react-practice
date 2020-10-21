@@ -1,12 +1,22 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { Link } from 'react-router-dom';
-
+import {ShopContext} from '../context/ShopProvider'
 
 function Navbar(){
+    const {openCart,closeCart} = useContext(ShopContext)
+
     const [click,setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
     const [button,setButton] = useState(true);
+    const handleClick = () => {
+        setClick(!click)
+        closeCart()
+    };
+    const closeMobileMenu = () => {
+        setClick(false)
+        closeCart()
+    };
+
+
 
     const showButton = () => {
         if(window.innerWidth <= 960){

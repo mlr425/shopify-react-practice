@@ -7,17 +7,19 @@ import Navbar from './Navbar'
 import ProductPage from '../pages/ProductPage';
 import Home from '../pages/Home';
 import Cart from '../components/Cart';
+import {ShopContext} from '../context/ShopProvider';
 import ShopProvider from '../context/ShopProvider';
 
 
 
-function App() {
-  
+function App(props) {
+
   return (
     <ShopProvider>
 
       <Router>
         <Navbar/>
+        
         <Cart/>
         <Switch>
           <Route path="/" exact component={Home}/> 
