@@ -9,22 +9,25 @@ import Home from '../pages/Home';
 import Cart from '../components/Cart';
 import {ShopContext} from '../context/ShopProvider';
 import ShopProvider from '../context/ShopProvider';
-
+import ScrollToTop from './ScrollToTop';
 
 
 function App(props) {
 
   return (
     <ShopProvider>
-
       <Router>
-        <Navbar/>
+        {/* <ScrollToTop> */}
+        <ScrollToTop/>
+
         
+        <Navbar/>
         <Cart/>
         <Switch>
           <Route path="/" exact component={Home}/> 
           <Route path="/product/:id" component={ProductPage}/>
         </Switch>
+        {/* </ScrollToTop> */}
       </Router>
     </ShopProvider>
     
