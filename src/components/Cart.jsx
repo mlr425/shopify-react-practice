@@ -13,7 +13,7 @@ export default function Cart() {
         <Sidebar
         visible={isCartOpen}
         direction="right"
-        width="very wide"
+        width="wide"
         animation={"overlay"}
         >
             

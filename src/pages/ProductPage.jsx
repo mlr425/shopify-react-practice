@@ -1,7 +1,7 @@
 import React, {useEffect, useContext} from 'react';
 import {useParams} from 'react-router-dom';
 import {ShopContext} from '../context/ShopProvider'
-import {Grid, Image, Container, Button, Header} from 'semantic-ui-react'
+import {Grid, Image, Container, Button, Header, Dropdown} from 'semantic-ui-react'
 
 import {Carousel} from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -52,11 +52,18 @@ export default function ProductPage(props) {
                     <Container className="container2" text>
                     <div className="product-vendor">{product.vendor}</div>
                     <p>{product.description}</p>
-                    <p>todo: add selectors for size, color, quantity.
+                    <p>could do: add selectors for size, color, quantity.
                         remove items from cart/update cart.
                         should clicking outside of the cart close it?
+                        this is just an example website 
+                        and i dont want to spend a lot of time flushing it out
+                        /adding all the tiny details
+
                     </p>
                     </Container>
+                    <div className="item-selector-container">
+
+                    </div>
 
                     <Button className="cartButton"  size="big" onClick={() => {
                         addItemToCheckout(product.variants[0].id,1)
@@ -76,3 +83,51 @@ export default function ProductPage(props) {
                     return <img key={product.id} className="img-On-carousel" src={imgV.src} ></img>
                 })}
                 </Carousel> */}
+
+
+// {/* {product.options[0].name}
+//                         {product.options[1].name} */}
+//                         {/* {product.options.map(n => {
+//                             return <div> {n.values.map(v => v.value)} </div>
+//                         })} */}
+
+//                         {/* {product.options.map(n => {
+//                             return <Dropdown.Item> {n.values.map(v => v.value)} </Dropdown.Item>
+//                         })} */}
+
+//                         {/* {product.options.map(n => {
+//                             return (
+//                                 <Dropdown.Item>
+//                                     {n.values.map(v => {
+//                                         return (
+//                                             <Dropdown.Item>
+//                                                 {v.value}
+//                                             </Dropdown.Item>
+//                                         )
+                                    
+//                                     })} 
+//                                 </Dropdown.Item>
+//                             ) 
+//                         })} */}
+
+                        
+
+//                         <Dropdown text='Size'>
+//                             <Dropdown.Menu>
+//                             {product.options.map(n => {
+//                             return (
+//                                 <>
+//                                     {n.values.map(v => {
+//                                         return (
+//                                             <Dropdown.Item>
+//                                                 {v.value}
+//                                             </Dropdown.Item>
+//                                         )
+                                    
+//                                     })} 
+//                                </> 
+//                             ) 
+//                         })}
+//                             </Dropdown.Menu>
+//                         </Dropdown>
+//                     </div>
