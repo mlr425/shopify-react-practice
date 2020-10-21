@@ -3,6 +3,7 @@
 @import './productpage.css';
 @import './cart.css';
 @import './navbar.css';
+@import 'searchbar.css';
 .App {
   text-align: center;
   box-sizing:border-box;

@@ -3,8 +3,15 @@
     grid-template-columns: auto auto auto;
     margin:50px;
     font-size:18px; */
-    
-    
+    /* border: 1px solid green; */
+    /* display:flex;
+    flex-direction: column; */
+}
+
+.search-bar{
+    display:flex;
+    padding-top:20px;
+    justify-content: center;
 }
 
 .ui.container.home-wrapper{
@@ -40,17 +47,26 @@
 .home-links{
     text-decoration: none;
     color:black;
-    /* border: 1px solid green; */
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height:320px;
+    border-radius: 3px;
+
 }
 .home-card-title{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top:10px;
+    padding-left:5px;
+
 }
 
 .home-card-price{
     display:flex;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    padding-bottom:5px;
+    padding-top:10px;
+    padding-left:5px;
 }
 
 .home-card-img{
@@ -58,7 +74,10 @@
     width:230px;
     height:250px;
     
+    
 }
+
+
 
 @media only screen and (max-width:768px){
     .ui.container.home-wrapper{

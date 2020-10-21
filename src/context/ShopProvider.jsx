@@ -64,6 +64,13 @@ export default function ShopProvider(props) {
         setCheckout(checkoutV)
     }
 
+    const queryItem = async (query) => {
+        // const filteredItems = await client.product.fetchQuery(query).then(products => {console.log(products)})
+        const filteredItems = await client.product.fetchQuery(query)
+        console.log(filteredItems)
+        setProducts(filteredItems)
+    }
+
     return (
         <ShopContext.Provider value={{
             products:products,
@@ -78,7 +85,8 @@ export default function ShopProvider(props) {
             fetchProductWithId:fetchProductWithId,
             addItemToCheckout:addItemToCheckout,
             openCart:openCart,
-            closeCart:closeCart
+            closeCart:closeCart,
+            queryItem:queryItem
             }}>
             {props.children} 
             {/* THIS LINE IS NECESSARY!  TO MAKE CONTEXT WORK*/}

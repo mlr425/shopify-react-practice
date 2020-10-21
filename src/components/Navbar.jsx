@@ -26,12 +26,8 @@ function Navbar(){
         }
     };
 
-    // solved the problem of the sign up sheet appearing on refresh page, navbar issue fixed
-    // useEffect(() => {
-    //     showButton()
-    // }, []);
-
-    window.addEventListener('resize',showButton)
+    //wtf does this even do
+    // window.addEventListener('resize',showButton)
 
     return(
         <>
