@@ -1,0 +1,41 @@
+.ui.right.very.wide.visible.sidebar{
+    
+    background-color:gainsboro;
+    
+}
+
+
+
+.ui.three.column.grid{
+    margin:5px;
+    /* border: 1px solid green; */
+}
+
+.ui.three.column.grid.grid-container{
+    /* border:1px solid red; */
+}
+
+.ui.button.checkout{
+    
+    
+}
+
+.ui.image.cart-img{
+    border:1px solid black;
+}
+
+.ui.button.cart-button{
+    margin:5px;
+    
+}
+
+.cart-button-area{
+    display:flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+.shopping-cart-title{
+    padding-left:10px;
+    font-size: 2.5rem;
+}

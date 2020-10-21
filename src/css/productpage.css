@@ -1,0 +1,84 @@
+.product-container{
+    display:flex;
+    
+    justify-content: flex-start;
+    margin:50px;
+    /* border: 1px solid green; */
+    flex-wrap:wrap;
+}
+
+.product-wrapper{
+    /* border: 1px solid green; */
+}
+
+
+.ui.header.product-title{
+    font-weight: bold;
+    font-size: 4rem;
+    padding-top:10px;
+
+}
+
+
+
+/* not too sure about this part here... it messes w/
+mobile responsiveness, but also could just change mobile down there too */
+.img-carousel{
+    
+    /* border:1px solid green;  */
+    margin:30px 80px 0px 92px;
+    
+}
+
+/* controls the img below */
+.img-On-carousel{
+    /* height:auto;
+    width:auto; */
+    
+}
+
+.carousel.carousel-slider{
+    
+    /* border:1px solid green; */
+    /* height: 75vh; */
+}
+
+.product-price{
+    padding-top:10px;
+    font-size: 2rem;
+}
+
+.product-vendor{
+    padding-top:15px;
+    font-size:1.5rem;
+}
+
+.ui.container.container2{
+    padding-bottom:50px;
+}
+
+.ui.button.cartButton{
+    background-color: #0E6EB8;
+    color:white;
+}
+
+.ui.button.cartButton:hover{
+    background-color: green;
+    color:white;
+}
+
+.product-stock{
+    padding-top:10px;
+}
+
+
+@media only screen and (max-width:768px){
+    .ui.header.product-title{
+        font-weight: bold;
+        font-size: 2.2rem;
+        padding-top:10px;
+    
+    }
+
+}
+
