@@ -57,18 +57,35 @@ mobile responsiveness, but also could just change mobile down there too */
     padding-bottom:50px;
 }
 
+.button-area{
+    padding-top:50px;
+    /* border:1px solid green; */
+}
+
 .ui.button.cartButton{
     background-color: #0E6EB8;
     color:white;
+    
 }
+
 
 .ui.button.cartButton:hover{
     background-color: green;
     color:white;
 }
 
+
 .product-stock{
     padding-top:10px;
+}
+
+.item-selector-container{
+    display:flex;
+}
+
+.ui.dropdown.dropdown{
+    font-size: 1.3rem;
+    padding-right:50px;
 }
 
 

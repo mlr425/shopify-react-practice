@@ -62,13 +62,35 @@ export default function ProductPage(props) {
                     </p>
                     </Container>
                     <div className="item-selector-container">
+                        {product.options.map(n => {
+                            return (
+                                <Dropdown className="dropdown" text={n.name}>
+                                    <Dropdown.Menu className="dropdown-menu">
+                                        {/* {console.log(n.values)} */}
+                                        {/* <Dropdown.Item text="hi"/> */}
+                                        {n.values.map(i => {
+                                            return(
+                                                <Dropdown.Item className="dropdown-item" text={i.value}/>
+                                            )
+                                        })}
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            ) 
+                        })}
+                        {/* <div className="item-color-info">
+                            
+                        </div>
+                        <div className="item-size-info">
 
+                        </div> */}
                     </div>
 
-                    <Button className="cartButton"  size="big" onClick={() => {
-                        addItemToCheckout(product.variants[0].id,1)
-                        openCart()
-                    }} >Add to Cart</Button>
+                    <div className="button-area">
+                        <Button className="cartButton"  size="big" onClick={() => {
+                            addItemToCheckout(product.variants[0].id,1)
+                            openCart()
+                        }} >Add to Cart</Button>
+                    </div>
                 </div>
             </div>
             </Grid.Column>

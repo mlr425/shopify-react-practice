@@ -67,7 +67,6 @@ export default function ShopProvider(props) {
     const queryItem = async (query) => {
         // const filteredItems = await client.product.fetchQuery(query).then(products => {console.log(products)})
         const filteredItems = await client.product.fetchQuery(query)
-        console.log(filteredItems)
         setProducts(filteredItems)
     }
 

@@ -38,6 +38,7 @@ export default function Home() {
         <>
             <Container className="home-container">
             <div className="search-bar">
+                {/* could add search not found */}
                 <Searchbar value={searchWord} onChange={handleSearch} />
             </div>
                 <Container className="home-wrapper">
