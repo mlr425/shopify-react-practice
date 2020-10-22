@@ -66,13 +66,11 @@ export default function ProductPage(props) {
                     <div className="item-selector-container">
                         {product.options.map(n => {
                             return (
-                                <Dropdown className="dropdown" text={n.name}>
+                                <Dropdown key={n.name} className="dropdown" text={n.name}>
                                     <Dropdown.Menu className="dropdown-menu">
-                                        {/* {console.log(n.values)} */}
-                                        {/* <Dropdown.Item text="hi"/> */}
                                         {n.values.map(i => {
                                             return(
-                                                <Dropdown.Item className="dropdown-item" text={i.value}/>
+                                                <Dropdown.Item key={i.value} className="dropdown-item" text={i.value}/>
                                             )
                                         })}
                                     </Dropdown.Menu>
