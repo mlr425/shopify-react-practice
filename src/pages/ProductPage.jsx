@@ -52,12 +52,14 @@ export default function ProductPage(props) {
                     <Container className="container2" text>
                     <div className="product-vendor">{product.vendor}</div>
                     <p>{product.description}</p>
-                    <p>could do: add selectors for size, color, quantity.
-                        remove items from cart/update cart.
+                    <p>COULD DO: add selector for quantity.
+                        remove/update items from cart.
+                        make selecting color/size/quantity update cart (bc this is an example front end, im going to skip. i believe its just more work using the shopify buy api)
                         should clicking outside of the cart close it?
-                        this is just an example website 
+                        this is just an example website (testing semantic ui, diff libs etc...)
                         and i dont want to spend a lot of time flushing it out
                         /adding all the tiny details
+
 
                     </p>
                     </Container>
